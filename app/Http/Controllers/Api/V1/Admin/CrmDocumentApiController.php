@@ -8,8 +8,8 @@ use App\Http\Requests\StoreCrmDocumentRequest;
 use App\Http\Requests\UpdateCrmDocumentRequest;
 use App\Http\Resources\Admin\CrmDocumentResource;
 use App\Models\CrmDocument;
-use Gate;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
 
 class CrmDocumentApiController extends Controller

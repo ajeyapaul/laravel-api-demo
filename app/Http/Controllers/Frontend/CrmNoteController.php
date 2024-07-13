@@ -8,7 +8,7 @@ use App\Http\Requests\StoreCrmNoteRequest;
 use App\Http\Requests\UpdateCrmNoteRequest;
 use App\Models\CrmCustomer;
 use App\Models\CrmNote;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 

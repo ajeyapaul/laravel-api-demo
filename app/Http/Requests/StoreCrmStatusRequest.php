@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use App\Models\CrmStatus;
-use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Gate;
 
 class StoreCrmStatusRequest extends FormRequest
 {
@@ -20,6 +20,7 @@ class StoreCrmStatusRequest extends FormRequest
             'name' => [
                 'string',
                 'required',
+                'unique:crm_statuses',
             ],
         ];
     }

@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Models\CrmDocument;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
 
@@ -18,11 +18,14 @@ class UpdateCrmDocumentRequest extends FormRequest
     {
         return [
             'customer_id' => [
-                'required',
+                //'required',
                 'integer',
             ],
-            'document_file' => [
-                'required',
+            'file' => [
+                //'required',
+                'file',
+                'mimes:jpg,jpeg,png,gif,pdf,doc,docx',
+                'max:2048',
             ],
             'name' => [
                 'string',

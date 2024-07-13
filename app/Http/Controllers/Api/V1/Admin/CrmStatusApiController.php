@@ -7,7 +7,7 @@ use App\Http\Requests\StoreCrmStatusRequest;
 use App\Http\Requests\UpdateCrmStatusRequest;
 use App\Http\Resources\Admin\CrmStatusResource;
 use App\Models\CrmStatus;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 

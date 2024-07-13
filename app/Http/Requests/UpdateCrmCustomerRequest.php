@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Models\CrmCustomer;
-use Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
 
@@ -19,14 +19,14 @@ class UpdateCrmCustomerRequest extends FormRequest
         return [
             'first_name' => [
                 'string',
-                'required',
+                //'required',
             ],
             'last_name' => [
                 'string',
                 'nullable',
             ],
             'status_id' => [
-                'required',
+                //'required',
                 'integer',
             ],
             'email' => [
